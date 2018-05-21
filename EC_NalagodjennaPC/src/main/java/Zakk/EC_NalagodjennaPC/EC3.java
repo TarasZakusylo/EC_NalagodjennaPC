@@ -113,6 +113,7 @@ public class EC3 extends JFrame {
 		b_gotovo.setForeground(Color.DARK_GRAY);
 		b_gotovo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+
 				i_sl_putanna2 = invector(ii_sl_putanna2);
 				i_sl_putanna13 = invector(i_sl_putanna13);
 
@@ -121,10 +122,10 @@ public class EC3 extends JFrame {
 
 				int i_zalizo = ii_sl_putanna3 + ii_sl_putanna4 + ii_sl_putanna10 + ii_sl_putanna11 + i_sl_putanna13;
 
-				int i_Internet = ii_sl_putanna12 + ii_sl_putanna13 + i_sl_putanna14 + i_sl_putanna15;
+				int i_Internet = i_sl_putanna12 + i_sl_putanna13 + i_sl_putanna14 + i_sl_putanna15;
 
-				new EC_Rezultatu(i_antuvirus, i_zalizo, i_Internet, i_sl_putanna12, i_sl_putanna13, i_sl_putanna14,
-						i_sl_putanna15);
+				new EC_Rezultatu(i_antuvirus, i_zalizo, i_Internet, ii_sl_putanna1, ii_sl_putanna8, i_sl_putanna12,
+						i_sl_putanna13, i_sl_putanna14, i_sl_putanna15);
 
 				setVisible(false);
 			}
